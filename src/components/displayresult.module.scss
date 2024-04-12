@@ -1,0 +1,86 @@
+.card {
+  &__wrapper {
+    margin-block-start: 3rem;
+    width: 100%;
+    max-width: 18rem;
+    box-shadow: 0 0 2px rgba(0 0 0 / 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  &__bio {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+  &__label {
+    flex: 1;
+  }
+  &__value {
+    flex: 1;
+  }
+  &__avatar {
+    width: 4.5rem;
+    height: 4.5rem;
+    box-shadow: 0 0 2px rgba(0 0 0 / 0.35);
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex;
+    justify-content: center;
+    background-color: #e6eded;
+    img {
+      width: 65%;
+      object-fit: contain;
+      aspect-ratio: 1/1;
+    }
+  }
+  &__hero {
+    width: 100%;
+    background-image: linear-gradient(rgba(5 7 34 / 0.95), rgba(4 6 96 / 0.65));
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  &__name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: right;
+    letter-spacing: 1px;
+  }
+  &__role {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ddd;
+    text-align: right;
+    margin-block-start: 0.5rem;
+  }
+  &__email {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: rgb(229, 229, 229);
+    text-align: right;
+    &:visited {
+      color: rgb(229, 229, 229);
+    }
+  }
+  &__about {
+    padding: 1rem 1rem 2rem;
+  }
+  &__about_title {
+    font-size: 0.9rem;
+  }
+  &__description {
+    font-size: 0.75rem;
+    margin: 0 auto;
+  }
+}
